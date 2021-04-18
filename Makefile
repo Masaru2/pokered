@@ -1,4 +1,4 @@
-roms := pokered.gbc pokeblue.gbc pokeblue_debug.gbc
+roms := pokered.gbc pokeblue.gbc pokered_debug.gbc pokeblue_debug.gbc
 
 rom_obj := \
 audio.o \
@@ -13,6 +13,7 @@ gfx/tilesets.o
 
 pokered_obj        := $(rom_obj:.o=_red.o)
 pokeblue_obj       := $(rom_obj:.o=_blue.o)
+pokered_debug_obj  := $(rom_obj:.o=_red_debug.o)
 pokeblue_debug_obj := $(rom_obj:.o=_blue_debug.o)
 
 
@@ -42,13 +43,14 @@ RGBLINK ?= $(RGBDS)rgblink
 all: $(roms)
 red:        pokered.gbc
 blue:       pokeblue.gbc
+red_debug:	pokered_debug.gbc
 blue_debug: pokeblue_debug.gbc
 
 clean: tidy
 	find gfx \( -iname '*.1bpp' -o -iname '*.2bpp' -o -iname '*.pic' \) -delete
 
 tidy:
-	rm -f $(roms) $(pokered_obj) $(pokeblue_obj) $(pokeblue_debug_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym) rgbdscheck.o
+	rm -f $(roms) $(pokered_obj) $(pokeblue_obj) $(pokeblue_debug_obj) $(pokered_debug_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym) rgbdscheck.o
 	$(MAKE) clean -C tools/
 
 compare: $(roms)
@@ -66,6 +68,7 @@ endif
 
 $(pokered_obj):        RGBASMFLAGS += -D _RED
 $(pokeblue_obj):       RGBASMFLAGS += -D _BLUE
+$(pokered_debug_obj):  RGBASMFLAGS += -D _RED -D _DEBUG
 $(pokeblue_debug_obj): RGBASMFLAGS += -D _BLUE -D _DEBUG
 
 rgbdscheck.o: rgbdscheck.asm
@@ -88,6 +91,7 @@ $(info $(shell $(MAKE) -C tools))
 # Dependencies for objects (drop _red and _blue from asm file basenames)
 $(foreach obj, $(pokered_obj), $(eval $(call DEP,$(obj),$(obj:_red.o=.asm))))
 $(foreach obj, $(pokeblue_obj), $(eval $(call DEP,$(obj),$(obj:_blue.o=.asm))))
+$(foreach obj, $(pokered_debug_obj), $(eval $(call DEP,$(obj),$(obj:_red_debug.o=.asm))))
 $(foreach obj, $(pokeblue_debug_obj), $(eval $(call DEP,$(obj),$(obj:_blue_debug.o=.asm))))
 
 endif
@@ -98,10 +102,12 @@ endif
 
 pokered_pad        = 0x00
 pokeblue_pad       = 0x00
+pokered_debug_pad  = 0xff
 pokeblue_debug_pad = 0xff
 
 pokered_opt        = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON RED"
 pokeblue_opt       = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON BLUE"
+pokered_debug_opt  = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON RED"
 pokeblue_debug_opt = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "POKEMON BLUE"
 
 %.gbc: $$(%_obj) layout.link
