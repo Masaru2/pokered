@@ -38,8 +38,12 @@ _FuchsiaCitySignText::
 	done
 
 _FuchsiaCitySafariGameSignText::
-	text "SAFARI GAME"
-	line "#MON-U-CATCH!"
+	text "The famous"
+	line "SAFARI GAME!"
+	
+	para "Catch #MON to"
+	line "your heart's"
+	cont "content!"
 	done
 
 _FuchsiaCityWardensHomeSignText::
@@ -94,8 +98,10 @@ _FuchsiaCitySlowpokeSignText::
 _FuchsiaCityLaprasSignText::
 	text "Name: LAPRAS"
 
-	para "A.K.A. the king"
-	line "of the seas."
+	para "The ruler of the"
+	line "seas, also"
+	cont "referred to as"
+	cont "the Sea Dragon."
 	prompt
 
 _FuchsiaCityFossilSignOmanyteText::
