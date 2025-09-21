@@ -1,4 +1,4 @@
-IF DEF(BLUE)
+IF DEF(_BLUE)
 SECTION "Pics 1", ROMX
 
 RhydonPicFront::      INCBIN "gfx/pokemon/front/rhydon.pic"
