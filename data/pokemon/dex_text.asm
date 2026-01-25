@@ -89,9 +89,9 @@ _IvysaurDexEntry::
 	dex
 
 _ExeggutorDexEntry::
-	text "It is called 'The"
-	next "Walking Tropical"
-	next "Rainforest.' Each"
+	text "It is called THE"
+	next "WALKING TROPICAL"
+	next "RAINFOREST. Each"
 
 	page "of the nuts has a"
 	next "face and a will"
@@ -175,17 +175,17 @@ _RhyhornDexEntry::
 	
 	page "shatter even a"
 	next "tower with its"
-	next "charging TACKLES."
+	next "charging TACKLES"
 	dex
 
 _LaprasDexEntry::
-	text "Its intelligence"
+	text "Its high intellect"
 	next "enables it to"
 	next "understand human"
 
 	page "speech. It likes"
 	next "to ferry people"
-	next "on its back."
+	next "on its back"
 	dex
 
 _ArcanineDexEntry::
@@ -240,11 +240,11 @@ _TentacoolDexEntry::
 
 _GastlyDexEntry::
 	text "It exists as a"
-	next "thin gas. An "
+	next "thin gas. An"
 	next "Indian elephant"
 	
 	page "can be toppled in"
-	next "2 seconds by "
+	next "2 seconds by"
 	next "encasing the prey"
 	dex
 
@@ -653,8 +653,8 @@ _MeowthDexEntry::
 	next "the day is sleep."
 	next "At night, its eyes"
 
-	page "are aglow while it"
-	next "patrols its"
+	page "are aglow while"
+	next "it patrols its"
 	next "territory"
 	dex
 
@@ -710,7 +710,7 @@ _RaichuDexEntry::
 
 _DratiniDexEntry::
 	text "Even the young can"
-	next "exceed 6.5 feet"
+	next "exceed 2 meters"
 	next "in length."
 
 	page "It grows larger"
@@ -769,13 +769,13 @@ _SeadraDexEntry::
 	dex
 
 _SandshrewDexEntry::
-	text "Burrows and lives"
-	next "underground. If"
-	next "threatened it"
+	text "It burrows and"
+	next "lives underground."
+	next "If threatened,"
 
-	page "curls itself up"
-	next "into a ball for"
-	next "protection"
+	page "it curls itself"
+	next "up into a ball"
+	next "for protection"
 	dex
 
 _SandslashDexEntry::
@@ -783,7 +783,7 @@ _SandslashDexEntry::
 	next "using the spines"
 	next "on its back and"
 	
-	page "its sharp claws "
+	page "its sharp claws"
 	next "while quickly"
 	next "scurrying about"
 	dex
@@ -880,7 +880,7 @@ _MachopDexEntry::
 
 _ZubatDexEntry::
 	text "It has no eyes."
-	next "Instead relying"
+	next "Instead, it relies"
 	next "on its ultrasonic"
 
 	page "cries for echo-"
@@ -900,8 +900,8 @@ _EkansDexEntry::
 
 _ParasDexEntry::
 	text "Mushrooms called"
-	next "'INSECT PLANTS'"
-	next "live on its back."
+	next "tochukaso grow"
+	next "out on its back."
 	
 	page "The mushrooms"
 	next "grow with the bug"
@@ -949,7 +949,7 @@ _KakunaDexEntry::
 	dex
 
 _BeedrillDexEntry::
-	text "May appears in a"
+	text "May appear in a"
 	next "swarm. Flies at"
 	next "violent speeds,"
 
@@ -1045,7 +1045,7 @@ _MachampDexEntry::
 
 	page "flurry of 1,000"
 	next "punches in just"
-	next "two seconds"
+	next "2 seconds"
 	dex
 
 _GolduckDexEntry::
@@ -1074,7 +1074,7 @@ _GolbatDexEntry::
 	next "needle-sharp"
 	
 	page "fangs and drains"
-	next "over 300 ccm of"
+	next "over 300 cc of"
 	next "blood in one gulp"
 	dex
 
@@ -1119,13 +1119,13 @@ _MukDexEntry::
 	dex
 
 _KinglerDexEntry::
-	text "Its large and"
-	next "hard pincer has"
-	next "10,000-horsepower"
+	text "Its hard pincer"
+	next "has 10,000-hp"
+	next "of strength."
 	
-	page "strength. Though,"
-	next "being so big, it"
-	next "is clumsy to move"
+	page "However, being"
+	next "so big, it is"
+	next "unwieldy to move"
 	dex
 
 _CloysterDexEntry::
@@ -1145,7 +1145,7 @@ _ElectrodeDexEntry::
 
 	page "It is feared, with"
 	next "the nickname of"
-	next "'THE BOMB BALL'"
+	next "THE BOMB BALL"
 	dex
 
 _ClefableDexEntry::
@@ -1430,42 +1430,42 @@ _CharmeleonDexEntry::
 
 _WartortleDexEntry::
 	text "This #MON is"
-	next "very popular as a"
-	next "pet. Its fur-"
+	next "very popular as"
+	next "a pet."
 	
-	page "covered tail is a"
-	next "symbol of its "
-	next "longevity"
+	page "Its fur-covered"
+	next "tail is a symbol"
+	next "of its longevity"
 	dex
 
 _CharizardDexEntry::
 	text "Its wings carry"
-	next "this POKéMON near"
-	next "an altitude of"
+	next "near an altitude"
+	next "of 1,400 meters."
 	
-	page "1,400 m. It blows"
-	next "out fire at very"
-	next "high temperatures"
+	page "It blows out fire"
+	next "at very high"
+	next "temperatures"
 	dex
 
 _OddishDexEntry::
-	text "Walks up to 300 m"
-	next "on its two root-"
-	next "like feet,"
+	text "Also known as"
+	next "ARCHIMENDES."
+	next "At night, it is"
 	
-	page "earning it the"
-	next "nickname 'NOODLES"
-	next "ON THE GO'"
+	page "said to walk"
+	next "nearly 300 meters"
+	next "on its two roots"
 	dex
 
 _GloomDexEntry::
 	text "Its pistils exude"
-	next "a terribly foul"
-	next "odor. The horrid"
+	next "an incredibly"
+	next "foul odor that"
 	
-	page "stench can cause"
-	next "fainting at a"
-	next "distance of 2 km"
+	page "can cause faint-"
+	next "ing at a distance"
+	next "of 2 kilometers"
 	dex
 
 _VileplumeDexEntry::

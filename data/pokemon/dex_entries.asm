@@ -709,14 +709,14 @@ DragonairDexEntry:
 	text_end
 
 KabutoDexEntry:
-	db "SHELLFISH@"
+	db "SHELL@"
     db 5
     dw 115
 	text_far _KabutoDexEntry
 	text_end
 
 KabutopsDexEntry:
-	db "SHELLFISH@"
+	db "SHELL@"
     db 13
     dw 405
 	text_far _KabutopsDexEntry
